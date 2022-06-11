@@ -1,9 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 import cv2 as cv
-img_path = './Assignment/1810576130_Assignnment3/flower.jpeg'
-img = plt.imread(img_path)
-img = np.array(img)
+
 
 def plot_img(x, y, pos, img, img_title):
     plt.subplot(x,y,pos)
