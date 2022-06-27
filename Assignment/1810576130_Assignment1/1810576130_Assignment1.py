@@ -6,7 +6,7 @@ import cv2
 def main():
     
     #Load an RGB image from a image_path
-    img_path = './flower.jpeg'
+    img_path = './1810576130_Assignment1/flower.jpeg'
     #print(img_path)
     rgb = plt.imread(img_path)
     #print(rgb)
@@ -41,6 +41,7 @@ def main():
         plt.subplot(x,y,pos+1)
         plt.title(title+" Histogram")
         plt.hist(color.ravel(),256,[0,256]);
+        channel +=1 
     
     # Binary Channel
     pos += 2
