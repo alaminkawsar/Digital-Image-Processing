@@ -21,12 +21,31 @@ def main():
     pos, channel = 1, 0
 
     #define six kernal
-    Vertical_kernel = np.array([[1,0,-1],[1,0,-1],[1,0,-1]]) #kernal size 3x3
-    Horizontal_kernel = np.array([[1,1,1],[0,0,0],[-1,-1,-1]]) #kernal size 3x3
-    Sobel_vertical_kernel = np.array([[1,0,-1],[2,0,-2],[1,0,-1]]) #kernal size 3x3
-    Scharr_vertical_kernel = np.array([[3,0,-3],[10,0,-10],[3,0,-3]]) #kernal size 3x3
-    my_kernel = np.array([[1,0,-2,1],[1,-1,1,-1],[1,0,-2,1],[-3,1,-2,-1],[0,3,1,2]]) # kernal size 5x5
-    Gaussian_kernel = np.array([[-1,4,-7,4,-1],[-4,16,-5,16,4],[-3,26,-41,26,-7],[-4,16,-26,-16,4],[1,-4,7,-4,1]])/10 # kernal size 5x5
+    Vertical_kernel = np.array([[1,0,-1],
+                                [1,0,-1],
+                                [1,0,-1]]) #kernal size 3x3
+    
+    Horizontal_kernel = np.array([[1,1,1],
+                                  [0,0,0],
+                                  [-1,-1,-1]]) #kernal size 3x3
+    
+    Sobel_vertical_kernel = np.array([[1,0,-1],
+                                      [2,0,-2],
+                                      [1,0,-1]]) #kernal size 3x3
+    
+    Scharr_vertical_kernel = np.array([[3,0,-3],
+                                       [10,0,-10],
+                                       [3,0,-3]]) #kernal size 3x3
+    my_kernel = np.array([[1,0,-2,1],
+                          [1,-1,1,-1],
+                          [1,0,-2,1],
+                          [-3,1,-2,-1],
+                          [0,3,1,2]]) # kernal size 5x5
+    Gaussian_kernel = np.array([[-1,4,-7,4,-1],
+                                [-4,16,-5,16,4],
+                                [-3,26,-41,26,-7],
+                                [-4,16,-26,-16,4],
+                                [1,-4,7,-4,1]])/10 # kernal size 5x5
 
     print("Vertical_kernel{}".format(Vertical_kernel))
     print("Horizontal_kernel{}".format(Horizontal_kernel))

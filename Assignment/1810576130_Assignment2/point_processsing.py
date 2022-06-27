@@ -17,7 +17,7 @@ def showImage(x, y, pos, img, img_title):
 def main():
     
     #Load an RGB image from a image_path
-    img_path = './Assignment/1810576130_Assignment2/flower.jpeg'
+    img_path = './1810576130_Assignment2/flower.jpeg'
     rgb = plt.imread(img_path)
         
     x, y = 3, 2

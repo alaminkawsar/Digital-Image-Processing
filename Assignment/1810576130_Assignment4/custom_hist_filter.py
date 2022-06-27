@@ -40,7 +40,7 @@ def main():
     x, y = 3, 2
     pos, channel = 1, 0
     
-    img_path = './Assignment/1810576130_Assignment4/flower.jpeg'
+    img_path = './1810576130_Assignment4/flower.jpeg'
     grayscale = cv.imread(img_path,0)
     plot_img(x,y,pos,grayscale,"Gray Scale Main Image")
 
@@ -60,7 +60,7 @@ def main():
     plt.subplot(x,y,pos+2)
     plt.title('Customize Histogram')
     plt.plot(x,y)
-    plt.bar(xaxis,yaxis,width=1.001)
+    plt.bar(xaxis,yaxis,width=1)
     
     #built in histogram
     plt.subplot(x,y,pos+3)
