@@ -1,11 +1,10 @@
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
+import os
 
-
-img_path = '/home/kawsar/Desktop/Class_Resource/4th Year 1st semester/ImageProcessingLab/Assignment/1810576130_Assignment7/flower.jpeg'
+img_path = './flower.jpeg'
 #print(img_path)
-
 x, y, pos = 4, 2, 1
 
 plt_list = []

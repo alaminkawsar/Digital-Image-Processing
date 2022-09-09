@@ -7,7 +7,7 @@ import numpy as np
 def main():
     
     #Load an RGB image from a image_path
-    img_path = '/home/kawsar/Desktop/Class_Resource/4th Year 1st semester/ImageProcessingLab/Assignment/1810576130_Assignment5/flower.jpeg'
+    img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment5/flower.jpeg'
     #print(img_path)
     rgb = plt.imread(img_path)
     #print(rgb)

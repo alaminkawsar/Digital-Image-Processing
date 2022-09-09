@@ -24,7 +24,8 @@ def main():
     
     x, y = 2,3
     pos, channel = 1, 0
-    
+    for i in range(10):
+        print(np.random.randint(10,20))
     plt.figure(figsize=(20,20))
     
     title = ['Grayscale Image','Filtered Image\n(Averaging)','Noisy Image\n(Salt and Pipper Noise)',

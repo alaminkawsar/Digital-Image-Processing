@@ -38,10 +38,10 @@ image_list = []
 title_list = ['Main Image','Erosion Image','Dilation Image','Closing Image','Openning Imgage']
 
 image_list.append(img)
-image_list.append(img_dilation)
-image_list.append(img_erosion)
-image_list.append(closing_img)
-image_list.append(opening_img)
+image_list.append(img_dilation1)
+image_list.append(img_erosion1)
+image_list.append(closing_img1)
+image_list.append(opening_img1)
 
 # plt.figure(figsize=(20,20))
 # plt.subplot(x, y, pos)
