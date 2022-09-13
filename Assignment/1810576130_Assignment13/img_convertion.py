@@ -4,7 +4,7 @@ import cv2
 
 
 '''Main Image Information'''
-img_path = 'Assignment/1810576130_Assignment11/nature.jpeg'
+img_path = './Assignment/1810576130_Assignment11/nature.jpeg'
 image = Image.open(img_path)
 print("Image Format is --> ",image.format)
 #Let's check the image header

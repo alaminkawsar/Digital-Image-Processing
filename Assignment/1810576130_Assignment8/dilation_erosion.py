@@ -2,7 +2,7 @@ import numpy as np
 import cv2 
 import matplotlib.pyplot as plt
 
-img_path = '1810576130_Assignment8/tree.jpg'
+img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment8/tree.jpg'
 img = plt.imread(img_path)
 _, img = cv2.threshold(img, 127, 255, cv2.THRESH_BINARY)
 # Taking a matrix of size 5 as the kernel
@@ -38,8 +38,8 @@ image_list = []
 title_list = ['Main Image','Erosion Image','Dilation Image','Closing Image','Openning Imgage']
 
 image_list.append(img)
-image_list.append(img_dilation1)
 image_list.append(img_erosion1)
+image_list.append(img_dilation1)
 image_list.append(closing_img1)
 image_list.append(opening_img1)
 
@@ -50,7 +50,7 @@ image_list.append(opening_img1)
 for item in image_list:
     plt.subplot(x, y, pos)
     plt.title(title_list[pos-1])
-    plt.imshow(item)
+    plt.imshow(item,cmap='gray')
     pos += 1
 
 plt.show()

@@ -5,7 +5,7 @@ import os
 
 
 def processing():
-    img_path = os.path.join(os.getcwd(),'1810576130_Assignment11/nature.jpeg');
+    img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment11/nature.jpeg';
     
     image = cv2.imread(img_path,0)
 
@@ -25,9 +25,11 @@ def processing():
     
     crow = rows//2
     ccol = cols//2
+    
+    # filter ke fft te nite hobe nite hobe
 
     
-    #shift_fft_image[crow-60:crow+61,ccol-60:ccol+60] = 0
+    # shift_fft_image[crow-60:crow+61,ccol-60:ccol+60] = 0
     f_shift = np.fft.ifftshift(shift_fft_image)
     img_back = np.fft.ifft2(f_shift)
     img_back = np.log(np.abs(img_back))

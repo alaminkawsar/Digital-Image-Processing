@@ -4,9 +4,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import cv2
 
-img_path = 'low_contrast.jpg'
+img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment10/blood.jpg'
 
 img = cv2.imread(img_path,0)
+print(img.shape)
 
 pos = 1
 print_list = []
@@ -16,6 +17,7 @@ print_list.append([True,img,'Histogram of Low Contrast Image']);
 
 ehimg = cv2.equalizeHist(img)
 print_list.append([False,ehimg,'Contrast Equalization Image'])
+print_list.append([True,ehimg,'Histogram of Equalization Image'])
 
 
 len = int(len(print_list))

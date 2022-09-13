@@ -26,7 +26,8 @@ def erosion(img: int, kernel: int)->np.array:
     new_w, new_h = w-k+1, h-k+1
     conv_img = np.zeros(shape=(new_w,new_h))
     
-    #number of one count
+    
+    # number of one count
     cnt = countOne(kernel=kernel)
     #print(cnt)
     for i in range(new_w):
@@ -62,7 +63,7 @@ def dilation(img: int, kernel: int)->np.array:
     return conv_img
 
 
-img_path = 'tree.jpg'
+img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment9/tree.jpg'
 img = cv2.imread(img_path,0)
 
 #img = cv2.resize(img,(300,300))
@@ -74,8 +75,6 @@ List.append([img,'Main Image'])
 
 # Taking a matrix of size 5 as the kernel
 kernel1 = np.ones((3, 3), np.uint8)
-
-
 
 
 #Built in dilation

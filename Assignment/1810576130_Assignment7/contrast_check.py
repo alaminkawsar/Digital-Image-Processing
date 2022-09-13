@@ -3,7 +3,7 @@ import cv2
 import matplotlib.pyplot as plt
 import os
 
-img_path = './flower.jpeg'
+img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment7/flower.jpeg'
 #print(img_path)
 x, y, pos = 4, 2, 1
 
