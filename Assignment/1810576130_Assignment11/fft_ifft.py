@@ -6,7 +6,7 @@ import os
 
 
 def processing():
-    img_path = 'nature.jpeg';
+    img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment11/nature.jpeg';
     
     image = cv2.imread(img_path,0)
     
