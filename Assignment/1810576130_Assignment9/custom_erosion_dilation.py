@@ -62,6 +62,7 @@ def dilation(img: int, kernel: int)->np.array:
                 conv_img[i,j]=0;
     return conv_img
 
+# start from here
 
 img_path = '/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment9/tree.jpg'
 img = cv2.imread(img_path,0)
@@ -73,7 +74,7 @@ x, y, pos = 1, 3, 1
 List = []
 List.append([img,'Main Image'])
 
-# Taking a matrix of size 5 as the kernel
+# Taking a matrix of size 3 as the kernel
 kernel1 = np.ones((3, 3), np.uint8)
 
 

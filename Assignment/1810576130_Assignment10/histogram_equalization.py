@@ -15,9 +15,9 @@ print_list.append([False,img,'Low Contrast Image'])
 print_list.append([True,img,'Histogram of Low Contrast Image']);
 
 
-ehimg = cv2.equalizeHist(img)
-print_list.append([False,ehimg,'Contrast Equalization Image'])
-print_list.append([True,ehimg,'Histogram of Equalization Image'])
+# ehimg = cv2.equalizeHist(img)
+# print_list.append([False,ehimg,'Contrast Equalization Image'])
+# print_list.append([True,ehimg,'Histogram of Equalization Image'])
 
 
 len = int(len(print_list))
