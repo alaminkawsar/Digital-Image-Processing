@@ -14,12 +14,12 @@ def get_custom_equalize_Hist(img):
     new_img = img.copy()
     for i in range(m):
         for j in range(n):
-            new_img[i,j] = np.round((cdf[img[i,j]] - cdf.min())/(m*n-cdf.min()) * ((1<<8) -1))
+            new_img[i,j] = np.round((cdf[img[i,j]] - cdf.min())/(m*n-cdf.min()) * 255)
     
     return new_img
     
     
-img = cv2.imread('man.png', 0)
+img = cv2.imread('/home/kawsar/Desktop/Class_Resource/4th year 1st semester/4181- Digital Image Processing/ImageProcessingLab/Assignment/1810576130_Assignment10/blood.jpg', 0)
 
 plt.figure(figsize=(20,20))
 
